@@ -1,8 +1,7 @@
-import { useState } from 'react'
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FormPage from "./FormPage";
 import FormList from "./FormList";
-import "./index.css"
 
 function App() {
   const [user, setUser] = useState(null);
@@ -14,7 +13,7 @@ function App() {
         <Route path="/FormList" element={<FormList user={user} />} />
       </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
