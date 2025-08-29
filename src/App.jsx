@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<FormPage setUser={setUser} />} />
         <Route path="/FormList" element={<FormList user={user} />} />
+        <Route path="/notedBelanja" element={<FormPage setUser={setUser} />} />
       </Routes>
     </Router>
   )
