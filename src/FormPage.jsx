@@ -18,7 +18,7 @@ function FormPage({ setUser }) {
     return (
         <>
             <h1>Selamat Datang</h1>
-            <form className="formPage" onSubmit={handleSubmit} style={{ marginTop: 40 }}>
+            <form className="formPage" onSubmit={handleSubmit} style={{ marginTop: '2rem' }}>
                 <input
                     className="fullName"
                     name="FName"

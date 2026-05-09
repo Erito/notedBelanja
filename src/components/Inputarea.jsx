@@ -22,11 +22,11 @@ function InputArea({ onAddItem }) {
     return (
         <form className="add-form" onSubmit={handleSubmit}>
             <h3>Hari ini belanja apa kita?</h3>
-            <select value={quantity} onChange={(e) => setQuantity(Number(e.target.value))}>
+            <select value={quantity} onChange={(e) => setQuantity(Number(e.target.value))} style={{ minWidth: '120px' }}>
                 {quantityNum}
             </select>
-            <input type="text" placeholder="nama barang..." value={name} onChange={(e) => setName(e.target.value)} />
-            <button>Tambah</button>
+            <input type="text" placeholder="nama barang..." value={name} onChange={(e) => setName(e.target.value)} style={{ flex: 1, minWidth: '150px' }} />
+            <button style={{ minWidth: '100px' }}>Tambah</button>
         </form>
     );
 }
